@@ -3,15 +3,23 @@ import { IsNotEmpty } from "@nestjs/class-validator";
 export class blogDto{
 
     @IsNotEmpty()
-    title: string;
+    userId: number;
 
-    subtitle: string;
+    @IsNotEmpty()
+    blogTitle: string;
 
-    file : [];
+    @IsNotEmpty()
+    blogSubtitle: string;
 
-    desc: string;
+    @IsNotEmpty()
+    blogFile: string;
 
-    keyword: string;
+    @IsNotEmpty()
+    blogDesc: string;
 
-    alt : string;
+    @IsNotEmpty()
+    blogKeyword: string;
+
+    @IsNotEmpty()
+    blogAlt: string;
 }

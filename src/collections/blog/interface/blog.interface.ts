@@ -8,15 +8,11 @@ export interface BlogInterface extends Document {
 
     blogSubtitle: string;
 
-    blogFile: [
-        title: string,
-        desc: string,
-        imgUrl: string
-    ];
+    blogFile: string;
 
     blogDesc: string;
 
-    blogKeyword: string;
+    blogKeyword: [];
 
     blogAlt: string;
 
@@ -30,15 +26,11 @@ interface ContentInterface {
 
     contentSubtitle: string;
 
-    contentFile: [
-        title: string,
-        desc: string,
-        imgUrl: string
-    ];
+    contentFile: string;
 
     contentDesc: string;
 
-    contentKeyword: string;
+    contentKeyword: [];
 
     contentAlt: string;
 }

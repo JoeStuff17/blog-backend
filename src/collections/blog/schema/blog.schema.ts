@@ -10,7 +10,7 @@ export class Content{
     contentSubtitle: string;
 
     @Prop()
-    contentFile : [];
+    contentFile : string;
 
     @Prop()
     contentDesc: string;
@@ -36,7 +36,7 @@ export class Blog{
     blogSubtitle: string;
 
     @Prop()
-    blogFile : [];
+    blogFile : string;
 
     @Prop()
     blogDesc: string;
