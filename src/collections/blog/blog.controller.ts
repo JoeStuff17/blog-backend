@@ -12,7 +12,7 @@ export class BlogController {
   async createBlog(@Res() res, @Body() payload: BlogInterface) {
     const a = await this.blogService.createBlog(payload);
     return res.status(HttpStatus.OK).json({
-      status: a.status,
+      status: a.success,
       message: a.message,
       data: a.data
     })
@@ -22,7 +22,7 @@ export class BlogController {
   async getBlog(@Res() res) {
     const blog = await this.blogService.fetchBlog();
     return res.status(HttpStatus.OK).json({
-      status: blog.status,
+      success: blog.success,
       message: blog.message,
       data: blog.data
     })

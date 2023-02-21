@@ -12,7 +12,7 @@ export class BlogService {
     const createBlog = await this.bolgModel.create(blogInterface);
     await createBlog.save();
     return {
-      status: true,
+      success: true,
       message: "Created successfully",
       data: createBlog
     }
@@ -21,7 +21,7 @@ export class BlogService {
   async fetchBlog() {
     const fetch = await this.bolgModel.find();
     return {
-      status: true,
+      success: true,
       message: "Data fetched successfully",
       data: fetch
     }
